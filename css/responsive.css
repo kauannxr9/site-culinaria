@@ -1,0 +1,116 @@
+/* ========================= */
+/* AJUSTES GERAIS */
+/* ========================= */
+
+h1, h2, p {
+    word-wrap: break-word;
+}
+
+/* ========================= */
+/* TABLET (até 1024px) */
+/* ========================= */
+
+@media (max-width: 1024px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+}
+
+/* ========================= */
+/* CELULAR (até 768px) */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    /* NAV vira coluna */
+    .nav .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #444;
+    }
+
+    /* HERO menor */
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    /* INGREDIENTES vira 1 coluna */
+    .lista-ingredientes {
+        grid-template-columns: 1fr;
+    }
+
+    /* BOTÃO ocupa tudo */
+    button {
+        width: 90%;
+        display: block;
+        margin: 10px auto;
+    }
+
+    /* FORM */
+    #formContato {
+        padding: 0 10px;
+    }
+}
+
+/* ========================= */
+/* CELULAR PEQUENO (até 480px) */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+    .header {
+        padding: 20px 10px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    /* imagens mais leves visualmente */
+    .card img {
+        max-height: 200px;
+        object-fit: cover;
+    }
+}
